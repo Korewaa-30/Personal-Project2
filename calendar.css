@@ -1,10 +1,22 @@
 h1 {
-	background-color: #ffafbc;
-	border-radius: 5px;
+	background: linear-gradient(90deg, #feb8c3, #ffafbc);
+	border: 1px solid #ffafbc;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	bottom: -40px;
 	color: #faf5f6;
-	margin: 10px;
+	margin: 0 10px 0 10px;
 	padding: 10px;
+	position: relative;
 	text-align: center;
+}
+
+#binder {
+	background-color: #ffafbc;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	bottom: -40px;
+	position: relative;
 }
 
 .container {
@@ -20,14 +32,17 @@ h1 {
 .my-calendar {
 	align-items: center;
 	background: linear-gradient(45deg, #fbdee2, #ffafbc);
-	border: 1px solid #ffe7eb;
+	border: 1px solid #fdc3cc;
 	border-radius: 5px;
+	box-shadow: -10px 0 10px rgba(69, 29, 29, 0.5);
 	display: flex;
 	justify-content: center;
 	max-width: 800px;
 	margin: 0 auto;
 	padding: 40px;
+	position: relative;
 	text-align: center;
+	top: -40px;
 }
 
 .calendar {
@@ -68,7 +83,103 @@ h1 {
 	width: 55%;
 }
 
-#days {
-	display: block;
-	text-align: center;
+.pegs {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	z-index: 1;
+	margin: 0 10px;
+}
+
+#peg,
+#peg1 {
+	margin-right: 30px;
+	margin-left: 30px;
+}
+
+@media (max-width: 760px) {
+	html,
+	body {
+		margin: 0 auto;
+		overflow-x: hidden;
+		overflow-y: hidden;
+	}
+
+	.container {
+		padding: 10px;
+		width: 100%;
+		height: 100%;
+		margin: 5px 5px 5px 5px;
+	}
+
+	.my-calendar {
+		align-items: center;
+		display: flex;
+		justify-content: center;
+		max-width: 560px;
+		margin: 0 auto;
+		padding: 20px;
+		text-align: center;
+	}
+
+	.calendar {
+		padding: 8px;
+		width: 80%;
+		height: auto;
+	}
+
+	#binder {
+		max-width: 80%;
+	}
+
+	.left,
+	.right {
+		font-size: 15px;
+		width: 70%;
+		height: auto;
+	}
+}
+
+@media (max-width: 480px) {
+	html,
+	body {
+		margin: 0 auto;
+		overflow-x: hidden;
+		overflow-y: hidden;
+	}
+
+	.container {
+		padding: 10px;
+		width: 100%;
+		height: 100%;
+		margin: 5px 5px 5px 5px;
+	}
+
+	#binder {
+		max-width: 80%;
+	}
+
+	.my-calendar {
+		align-items: center;
+		display: flex;
+		height: 100%;
+		justify-content: center;
+		max-width: 300px;
+		margin: 0 auto;
+		padding: 10px;
+		text-align: center;
+	}
+
+	.calendar {
+		padding: 5px;
+		width: 80%;
+		height: auto;
+	}
+
+	.left,
+	.right {
+		font-size: 12px;
+		width: 70%;
+		height: auto;
+	}
 }
