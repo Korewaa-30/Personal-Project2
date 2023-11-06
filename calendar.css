@@ -1,10 +1,20 @@
+:root {
+	--primary-color: #feb8c3;
+	--secondary-color: #ffafbc;
+	--tertiary-color: #faf5f6;
+}
+
 h1 {
-	background: linear-gradient(90deg, #feb8c3, #ffafbc);
-	border: 1px solid #ffafbc;
+	background: linear-gradient(
+		to top,
+		var(--primary-color),
+		var(--secondary-color)
+	);
+	border: 1px solid var(--secondary-color);
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 	bottom: -40px;
-	color: #faf5f6;
+	color: var(--tertiary-color);
 	margin: 0 10px 0 10px;
 	padding: 10px;
 	position: relative;
@@ -12,7 +22,7 @@ h1 {
 }
 
 #binder {
-	background-color: #ffafbc;
+	background-color: var(--secondary-color);
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 	bottom: -40px;
@@ -31,7 +41,7 @@ h1 {
 
 .my-calendar {
 	align-items: center;
-	background: linear-gradient(45deg, #fbdee2, #ffafbc);
+	background: linear-gradient(45deg, #fbdee2, var(--secondary-color));
 	border: 1px solid #fdc3cc;
 	border-radius: 5px;
 	box-shadow: -10px 0 10px rgba(69, 29, 29, 0.5);
@@ -77,7 +87,7 @@ h1 {
 }
 
 .left {
-	background-color: #faf5f6;
+	background-color: var(--tertiary-color);
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
 	width: 55%;
