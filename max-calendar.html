@@ -33,56 +33,56 @@
 		/>
 		<link
 			rel="stylesheet"
-			href="calendar.css"
+			href="max-calendar.css"
 		/>
 		<script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
 	</head>
 	<body>
 		<div class="container">
-			<img
-				src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/102/698/original/perfect_bind.png?1698943928"
-				alt=""
-				id="binder"
-			/>
-			<h1>MY CALENDAR</h1>
-			<div class="pegs">
-				<img
-					src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/102/700/original/peg.png?1698946571"
-					alt=""
-					id="peg"
-					width="100"
-				/>
-				<img
-					src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/102/700/original/peg.png?1698946571"
-					alt=""
-					id="peg1"
-					width="100"
-				/>
-			</div>
-			<div class="my-calendar">
-				<div class="calendar">
-					<div class="left">
-						<p id="day">Sunday</p>
-						<p id="date">01</p>
+			<h1>CALENDAR</h1>
+			<div class="calendar">
+				<div class="calendar-header">
+					<span id="month-picker">November</span>
+					<span id="year-picker">
+						<span
+							class="year-change"
+							id="pre-year"
+						>
+							<pre>&lt;</pre>
+						</span>
+						<span id="year">2023</span>
+						<span
+							class="year-change"
+							id="next-year"
+						>
+							<pre>&gt;</pre>
+						</span>
+					</span>
+				</div>
+				<div class="calendar-body">
+					<div class="weekdays">
+						<div>Sun</div>
+						<div>Mon</div>
+						<div>Tue</div>
+						<div>Wed</div>
+						<div>Thu</div>
+						<div>Fri</div>
+						<div>Sat</div>
 					</div>
-					<div class="right">
-						<p id="month">January</p>
-						<p id="year">2023</p>
+					<div class="days"></div>
+				</div>
+				<div class="calendar-footer"></div>
+				<div class="date-time-format">
+					<div class="day-format">TODAY</div>
+					<div class="time-value">
+						<div class="time-format">20:33</div>
+						<div class="date-format">7th November, 2023</div>
 					</div>
 				</div>
+				<div class="month-list"></div>
 			</div>
-			<a
-				href="max-calendar.html"
-				class="change-view"
-				>View full calendar</a
-			>
-			<small>
-				<a href="https://github.com/Korewaa-30/Personal-Project2"
-					>Open-source code</a
-				>
-				<span><em>by Sarah Duker</em></span>
-			</small>
 		</div>
-		<script src="calendar.js"></script>
+		<br />
+		<a href="index.html">View mini-calendar</a>
 	</body>
 </html>
