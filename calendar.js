@@ -4,7 +4,6 @@ let monthElement = document.querySelector("#month");
 let yearElement = document.querySelector("#year");
 
 let today = new Date();
-console.log(today);
 
 let day = [
 	"Sunday",
