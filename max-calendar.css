@@ -229,7 +229,7 @@ a:hover {
 		box-shadow: var(--shadow);
 		color: var(--tertiary-color);
 		cursor: pointer;
-		margin: 0 200px;
+		margin-bottom: 5px;
 		text-decoration: underline;
 	}
 	a:hover {
@@ -261,7 +261,7 @@ a:hover {
 		max-width: 80%;
 	}
 	.calendar-header {
-		max-width: 80%;
+		max-width: 90%;
 	}
 	a:hover {
 		background: var(--secondary-color);
