@@ -232,6 +232,16 @@ a:hover {
 		margin: 0 200px;
 		text-decoration: underline;
 	}
+	a:hover {
+		background: var(--secondary-color);
+		border-radius: 10px;
+		box-shadow: var(--shadow);
+		color: var(--tertiary-color);
+		cursor: pointer;
+		margin: 0 auto;
+		max-width: 100%;
+		text-decoration: underline;
+	}
 }
 
 @media (max-width: 480px) {
@@ -259,6 +269,8 @@ a:hover {
 		box-shadow: var(--shadow);
 		color: var(--tertiary-color);
 		cursor: pointer;
+		margin: 0 auto;
+		max-width: 100%;
 		text-decoration: underline;
 	}
 }
