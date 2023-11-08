@@ -12,6 +12,7 @@
 }
 
 h1 {
+	background: var(--gradient);
 	border-radius: 10px;
 	box-shadow: var(--shadow);
 	color: var(--color-3);
@@ -20,25 +21,29 @@ h1 {
 
 a {
 	display: block;
+	padding: 15px;
 	text-align: center;
 	text-decoration: none;
 }
 
 a:hover {
-	cursor: pointer;
 	background: var(--secondary-color);
-	border-radius: 5px;
+	border-radius: 10px;
 	box-shadow: var(--shadow);
 	color: var(--tertiary-color);
-	margin: 0 600px;
-	padding: 15px;
+	cursor: pointer;
+	margin: 0 200px;
 	text-decoration: underline;
 }
 
+#binder {
+	background: linear-gradient(to right, #b5d7fe, #4b9cf8);
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
 .container {
-	background: var(--gradient);
 	border-radius: 5px;
-	box-shadow: var(--shadow);
 	display: block;
 	font-family: Arial, Helvetica, sans-serif;
 	justify-content: center;
@@ -49,7 +54,7 @@ a:hover {
 }
 
 .calendar {
-	background: var(--color-3);
+	background: var(--gradient);
 	border-radius: 10px;
 	box-shadow: var(--shadow);
 	height: 400px;
@@ -58,8 +63,8 @@ a:hover {
 
 .calendar-header {
 	background: var(--color-2);
-	border: 1px solid var(--color-3);
-	border-radius: 5px;
+	border: 1px solid var(--color-1);
+	border-radius: 10px;
 	color: var(--color-3);
 	display: flex;
 	font-weight: 700;
