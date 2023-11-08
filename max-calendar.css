@@ -261,6 +261,7 @@ a:hover {
 		max-width: 80%;
 	}
 	.calendar-header {
+		align-items: center;
 		max-width: 90%;
 	}
 	a:hover {
