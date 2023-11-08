@@ -259,7 +259,6 @@ a:hover {
 		box-shadow: var(--shadow);
 		color: var(--tertiary-color);
 		cursor: pointer;
-		margin: 0 200px;
 		text-decoration: underline;
 	}
 }
