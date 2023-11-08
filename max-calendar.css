@@ -262,6 +262,7 @@ a:hover {
 	}
 	.calendar-header {
 		align-items: center;
+		margin-left: 10px;
 		max-width: 90%;
 	}
 	a:hover {

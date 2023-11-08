@@ -230,9 +230,12 @@ h1 {
 		height: auto;
 	}
 	.change-view {
+		display: flex;
+		flex-wrap: wrap;
 		margin: 5px;
 		max-width: 100%;
 		padding: 5px;
+		place-content: center;
 		text-decoration: none;
 	}
 
