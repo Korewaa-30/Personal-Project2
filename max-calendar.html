@@ -45,9 +45,12 @@
 				id="binder"
 			/>
 			<h1>CALENDAR</h1>
-			<div class="calendar">
+			<div
+				class="calendar"
+				id="calendar"
+			>
 				<div class="calendar-header">
-					<span id="month-picker">November</span>
+					<span id="month-picker">March</span>
 					<span id="year-picker">
 						<span
 							class="year-change"
@@ -55,7 +58,7 @@
 						>
 							<pre>&lt;</pre>
 						</span>
-						<span id="year">2023</span>
+						<span id="year">1994</span>
 						<span
 							class="year-change"
 							id="next-year"
@@ -74,11 +77,16 @@
 						<div>Fri</div>
 						<div>Sat</div>
 					</div>
-					<div class="days"></div>
+					<div id="days"></div>
 				</div>
 				<div class="calendar-footer"></div>
 				<div class="date-time-format">
-					<div class="day-format">TODAY</div>
+					<div
+						class="day-format"
+						id="day"
+					>
+						TODAY
+					</div>
 					<div class="time-value">
 						<div
 							class="time-format"
@@ -98,6 +106,11 @@
 			</div>
 			<br />
 			<a href="index.html">View mini-calendar</a>
+			<a
+				href="max-calendar.html"
+				class="change-view"
+				>View full calendar</a
+			>
 		</div>
 		<script src="max-calendar.js"></script>
 	</body>
